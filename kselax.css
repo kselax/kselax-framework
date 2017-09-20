@@ -1,0 +1,130 @@
+/*#####################*/
+/*grid*/
+
+.g{
+  width : 100%;
+  max-width : 1200px;
+  box-sizing: border-box; 
+  margin: auto;
+}
+.g *{
+  box-sizing: border-box; 
+}
+
+.r{
+ /* padding: 10px;*/
+}
+
+.r:before, 
+.r:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.c-1,
+.c-2,
+.c-3,
+.c-4,
+.c-5,
+.c-6,
+.c-7,
+.c-8,
+.c-9,
+.c-10,
+.c-11,
+.c-12{
+  float: left;
+  min-height: 1px; 
+  width: calc(100% * 12);
+  padding: 10px;
+}
+
+.c-1{
+  width: calc(100% * (1 / 12) ); 
+}
+.c-2{
+  width: calc(100% * (2 / 12) );
+}
+.c-3{
+  width: calc(100% * (3 / 12) ); 
+}
+.c-4{
+  width: calc(100% * (4 / 12) );
+}
+.c-5{
+  width: calc(100% * (5 / 12) );
+}
+.c-6{
+  width: calc(100% * (6 / 12) );
+}
+.c-7{
+  width: calc(100% * (7 / 12) );
+}
+.c-8{
+  width: calc(100% * (8 / 12) );
+}
+.c-9{
+  width: calc(100% * (9 / 12) );
+}
+.c-10{
+  width: calc(100% * (10 / 12) );
+}
+.c-11{
+  width: calc(100% * (11 / 12) );
+}
+.c-12{
+  width: calc(100% * (12 / 12) );
+}
+
+@media (max-width: 768px){
+  .c-1,
+  .c-2,
+  .c-3,
+  .c-4,
+  .c-5,
+  .c-6,
+  .c-7,
+  .c-8,
+  .c-9,
+  .c-10,
+  .c-11,
+  .c-12{
+    width: 100%;
+  }
+}
+
+
+/*grid*/
+/*#####################*/
+
+
+
+
+/* working classes */
+
+.ta_right{
+  text-align: right;
+}
+.ta_left{
+  text-align: left;
+}
+.block{
+  display: block;
+}
+.inline_block{
+  display: inline-block;
+}
+.f_left{
+  float: left;
+}
+.f_right{
+  float: right;
+}
+
+/* working classes */
+
+
+[class*="c-"]{
+  border: 2px solid red;
+}
